@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- <link rel="stylesheet" href="../style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+      <div class="nav-bar">
+        <i
+          class="fa-solid fa-bars"
+          onclick="toggleMenu()"
+          style="position: absolute; right: 20px; z-index: 10000; top: 20px"
+          id="bars"
+        ></i>
+        <ul id="mobile-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html">Offer</a></li>
+          <li><a href="../index.html">Speciality</a></li>
+          <li><a href="../cart.html">Menu</a></li>
+          <li>
+            <a href="./index.html"><button class="btn-1">SignUp</button></a>
+          </li>
+          <li>
+            <a href="../cart.html" class="cart"
+              ><i class="fas fa-shopping-cart"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="main-wrapper">
+        <div class="side-img">
+          <img style="width: 400px" src="../images/login-img.png" />
+        </div>
+        <div class="form-container">
+          <div class="form-container-wrapper">
+            <form
+              name="signup"
+              id="form"
+              method="post"
+              onsubmit="return formValidation()"
+            >
+              <h1>Sign Up</h1>
+              <span>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="fname" placeholder="Name" required />
+              </span>
+              <span>
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="email"
+                  name="femail"
+                  placeholder="Email"
+                  required
+                />
+              </span>
+              <span>
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Username"
+                  required
+                />
+              </span>
+              <span>
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  name="fpassword"
+                  placeholder="New Password"
+                  required
+                />
+              </span>
+              <span>
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  name="password2"
+                  required
+                />
+              </span>
+              <div class="check-box">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  id="check-box"
+                  required
+                />I agree all statement in
+                <a href="#"><b>Terms of Service</b></a>
+              </div>
+              <button type="submit" value="Submit" id="submit-form">
+                submit
+              </button>
+              <br />
+
+              <div class="login-with">
+                <div class="line-parent">
+                  <div class="line"></div>
+                  <div style="font-size: 13px">or</div>
+                  <div class="line"></div>
+                </div>
+                <div class="login-with-google">
+                  <a href="#">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Sign in with Google</span>
+                  </a>
+                </div>
+                <div class="already">
+                  <a href="#">Have already an account? <b>Login</b></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-box">
+        <div class="add">
+          <div data-aos="zoom-in-up" data-aos-duration="1000">
+            <h3 class="heading-footer">Food-Court</h3>
+            <p>Room No. 210, Academic Building,</p>
+            <p>Shershah Engineering College,</p>
+            <p>PO: Barki Kharari, PS: Kargahar,</p>
+            <p>Sasaram, India - 821113</p>
+            <h4>Way to Reach Us</h4>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-duration="1000">
+          <div class="Policie">
+            <h4>Policies</h4>
+            <a href="#"><p>Terms & Conditions</p></a>
+            <a href="#"><p>Privacy Policy</p></a>
+            <a href="#"><p>Payment Refund Policy</p></a>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-duration="1000">
+          <div class="Contact">
+            <h4>Contact Us</h4>
+            <div>
+              <a href=""
+                ><i class="fas fa-envelope"><p>support@gmail.com</p></i></a
+              >
+            </div>
+            <div>
+              <a href="tel:9007006001"
+                ><i class="fas fa-phone-alt"><p>9007006001</p></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-duration="1000">
+          <div class="Social">
+            <h4>Write to us at:</h4>
+            <div>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+
+              <a href="#"><i class="fab fa-instagram"></i></a>
+
+              <a href="#"><i class="fab fa-telegram"></i></a>
+
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
