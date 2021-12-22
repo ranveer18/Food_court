@@ -586,7 +586,7 @@ i p {
     flex-direction: column;
   }
   .footer-box {
-    padding: 2rem;
+    padding-bottom: 4rem;
     /* justify-content: left; */
     gap: 20px;
     display: flex;
@@ -666,7 +666,7 @@ i p {
     flex-direction: column;
   }
   .footer-box {
-    padding: 2rem;
+    padding: 5rem;
     justify-content: left;
   }
   .review .box-container .box {
@@ -761,7 +761,7 @@ i p {
     flex-direction: column;
   }
   .footer-box {
-    padding: 2rem;
+    padding: 4rem;
     justify-content: left;
   }
   p {
