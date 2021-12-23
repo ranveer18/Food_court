@@ -461,12 +461,12 @@ i p {
 .box-container .box .content {
   position: absolute;
   top: -100%;
+  padding-top: 2.5rem;
   left: 0;
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
-  padding: 2rem;
-  padding-top: 5rem;
+
   text-align: center;
 }
 
@@ -493,7 +493,7 @@ i p {
 /* 
  */
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1110px) {
   header .logo {
     position: relative;
     left: 20px;
